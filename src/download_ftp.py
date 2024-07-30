@@ -155,9 +155,9 @@ def Save_config(hostname, username, password, port):
 
 
 if __name__ == "__main__":
-    choice = int(input("请选择操作"))
     print("1.备份交换机配置")
     print("2.保存交换机配置")
+    choice = int(input("请选择操作"))
     with open("index.txt", "r") as fileHandler:
         hostname = fileHandler.readline().strip()
         while hostname:
